@@ -1,0 +1,132 @@
+/* 
+Inspired By:
+ ___                  _                      _    __                 _
+(   ) ____    _   _  ( ) _____   ___  __    { }  {  }    ___  __    ( )   ___
+ | | /  __\  | \ | |  _ |_  __|/ ___||   \  |  \/   |  / ___||   \   _   / _ \
+ | | | |  __ |  \| | ( )  | | / /___ | || | | |\_/| | / /___ | || | ( ) |  _  |  
+ | | | |_|_ || |\  | | |  | || |____ | || / | |   | || |____ | || / | | | | | |
+(___) \____/ |_| \_|(___) |_| \____/ |__ /  |_|   |_| \____/ |__ / (___)|_| |_|
+                          IgnitedMediaDesign.com
+*/
+
+/*  
+    ==============================
+    Layout
+    ==============================
+*/
+body {
+	background: white;
+	margin: 0 auto;
+	padding: 0;
+	color: #CC4E9D;
+}
+.header {	
+	background: #000;	
+	margin: 0 auto;
+	text-align:center;
+}
+.logo {
+	margin: 0 auto;
+	max-width: 320px;	
+	text-align:center;
+}	  
+.content {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*  
+    ==============================
+    Image Blocks
+    ==============================
+*/
+
+.thumb {
+	/* Thumbs background for image */
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+}
+/* Set the blurry depth here */
+.thumb.blur {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#thumbs .thumb {
+	display: inline-block;
+	border-radius: 10px;
+	border:1px solid #666;
+	width:200px;
+	height:200px;
+	margin: 10px;
+	overflow:hidden;
+	
+}
+
+/*  
+    ==============================
+    Quiz Popup
+    ==============================
+*/
+#quizOverlay {
+		position: fixed; top: 0; left: 0; z-index: 1000;
+		width: 90%;
+		height: 90%;
+		padding: 5%;
+		background: rgba(0,0,0,0.5);
+		display: none;
+		text-align: center;
+		overflow: auto;
+}
+
+#quizOverlay .hint, #quizOverlay .question, #quizOverlay .testimonial {
+		font-size: 20px;
+		background: white;
+		border-radius: 10px;
+}
+
+#quizOverlay .thumb img {
+		max-width: 100%;
+		max-height: 400px;
+}
+
+#quizOverlay .answer input {
+		width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 40px;
+    text-align: center;
+		text-transform: uppercase;
+		font-family: cursive, monospace;
+}
+
+#quizOverlay .answer span {
+		display: inline-block;
+		width: 20px;
+}
+
+#closeOverlay {
+		position: absolute;
+		top: 10px; right: 10px;
+		cursor: pointer;
+}
+
+/*  
+    ==============================
+    FOOTER
+    ==============================
+*/
+.footer {	
+	background-color: #000;	
+	color: #999;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight:bold;
+	max-width: 320px;	
+	margin: 0 auto;
+	text-align:center;
+}
